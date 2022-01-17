@@ -38,10 +38,10 @@ const ProfileScreen = ({ location, history }) => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "notezipper");
-      data.append("cloud_name", "piyushproj");
-      fetch("https://api.cloudinary.com/v1_1/piyushproj/image/upload", {
-        method: "post",
+      data.append("upload_preset", "Map-O-Pedia");
+      data.append("cloud_name", "shama");
+      fetch("https://api.cloudinary.com/v1_1/shama/image/upload", {
+        method: "POST",
         body: data,
       })
         .then((res) => res.json())
@@ -125,7 +125,11 @@ const ProfileScreen = ({ location, history }) => {
                   custom
                 />
               </Form.Group>
-              <Button type="submit" varient="primary">
+              <Button
+                type="submit"
+                varient="primary"
+                style={{ marginTop: "30px" }}
+              >
                 Update
               </Button>
             </Form>
