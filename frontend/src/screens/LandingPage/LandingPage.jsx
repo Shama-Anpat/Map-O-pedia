@@ -19,13 +19,6 @@ function LandingPage({ history }) {
       <Container>
         <Row>
           <div className="intro-text">
-            <div>
-              <p className="subtitle">
-                <b>
-                  Your one place <br></br>"encyclopedia"
-                </b>
-              </p>
-            </div>
             <div className="buttonContainer">
               <Link to="/login">
                 <Button size="lg" className="landingbutton">

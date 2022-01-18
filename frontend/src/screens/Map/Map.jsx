@@ -1,3 +1,28 @@
+import ReactMapGL from "react-map-gl";
+import { useState } from "react";
+
+function Map() {
+  const [viewport, setViewport] = useState({
+    latitude: 19.7515,
+    longitude: 75.7139,
+    zoom: 4,
+  });
+  return (
+    <div className="MapContainer" style={{ height: "100vh", width: "100%" }}>
+      <ReactMapGL
+        {...viewport}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}
+        width="100%"
+        height="100%"
+        transitionDuration="100"
+        mapStyle="mapbox://styles/shamaanpat/ckwnqmwfw0uvr15jq6wpbnith"
+        onViewportChange={(viewport) => setViewport(viewport)}
+      ></ReactMapGL>
+    </div>
+  );
+}
+export default Map;
+
 // import ReactMapGL, { Marker, Popup } from "react-map-gl";
 // import { useEffect, useState } from "react";
 // import Select from "react-select";

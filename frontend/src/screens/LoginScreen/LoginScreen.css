@@ -1,9 +1,9 @@
 .loginContainer {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }
 
 .loginmain {
-  background-image: url("../../loginbg.jpg");
+    background-image: url("../../maploginpage.png");
 }

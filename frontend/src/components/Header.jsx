@@ -24,9 +24,9 @@ function Header({ setSearch }) {
   useEffect(() => {}, [userInfo]);
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light">
+    <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
-        <Navbar.Brand href="/">Map-O-Pedia</Navbar.Brand>
+        <Navbar.Brand href="/">Map-O-Pedia </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -46,7 +46,7 @@ function Header({ setSearch }) {
             {userInfo ? (
               <>
                 <Nav.Link href="/mynotes">My Notes</Nav.Link>
-                <Nav.Link href="/Pins">Pins</Nav.Link>
+                <Nav.Link href="/pins">Pins</Nav.Link>
                 <NavDropdown
                   title={`${userInfo.name}`}
                   id="collasible-nav-dropdown"
@@ -69,10 +69,10 @@ function Header({ setSearch }) {
                 </NavDropdown>
               </>
             ) : (
-              <Nav>
+              <>
                 <Nav.Link href="/login">Login</Nav.Link>
-                {/* <Nav.Link href="/map">Map</Nav.Link> */}
-              </Nav>
+                <Nav.Link href="/map">Map</Nav.Link>
+              </>
             )}
           </Nav>
         </Navbar.Collapse>

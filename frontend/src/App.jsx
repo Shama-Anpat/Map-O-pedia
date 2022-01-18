@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LandingPage from "./screens/LandingPage/LandingPage";
-// import Map from "./screens/Map/Map";
+import Map from "./screens/Map/Map";
 import MyNotes from "./screens/MyNotes/MyNotes";
 import SingleNote from "./screens/SingleNote/SingleNote";
 import LoginScreen from "./screens/LoginScreen/LoginScreen";
@@ -24,7 +24,7 @@ function App() {
       <main className="App">
         <Route path="/" component={LandingPage} exact />
         <Route path="/login" component={LoginScreen} />
-        {/* <Route path="/map" component={Map} /> */}
+        <Route path="/map" component={Map} />
         <Route path="/register" component={RegisterScreen} />
         <Route
           path="/pins"
