@@ -22,7 +22,6 @@ function Header({ setSearch }) {
   };
 
   useEffect(() => {}, [userInfo]);
-
   return (
     <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
