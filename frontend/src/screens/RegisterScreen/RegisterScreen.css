@@ -1,9 +1,0 @@
-.loginContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.registrationmain {
-    background-image: url("../../mapregisterpage.png");
-}

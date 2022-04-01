@@ -1,0 +1,85 @@
+.main {
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    background-color: #c0d8c0;
+    background-position: center;
+    background-size: cover;
+}
+
+.mainjumbotron {
+    background-image: url("../../images/mapregisterpage.png");
+    background-repeat: no-repeat, repeat;
+    background-position: cover;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px;
+    border-radius: 250px 0px 250px 0px;
+    box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75) !important;
+}
+
+.mainjumbotron p {
+    background-attachment: #432c51;
+    padding: 50px;
+    font-size: 30px;
+    color: #432c51;
+}
+
+.mainjumbotron h3 {
+    padding-left: 330px;
+}
+
+.carousel {
+    padding: 50px;
+}
+
+.buttonContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.landingbutton {
+    width: 200px;
+    height: 55px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .buttonContainer {
+        padding: 0 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .landingbutton {
+        width: 150px;
+        height: 50px;
+    }
+    .mainjumbotron {
+        background-image: url("../../images/mapregisterpage.png");
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 30px 10px 30px 10px;
+        border-radius: 250px 0px 250px 250px;
+        box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75) !important;
+    }
+    .mainjumbotron p {
+        background-attachment: #ffffff73;
+        padding: 70px;
+        font-size: 20px;
+        color: #432c51;
+    }
+    .mainjumbotron h3 {
+        font-size: 23px;
+        padding-left: 80px;
+    }
+    .buttonContainer {
+        margin: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

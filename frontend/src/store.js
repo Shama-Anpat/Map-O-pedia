@@ -8,44 +8,65 @@ import {
     noteUpdateReducer,
 } from "./reducers/notesReducers";
 import {
-    userLoginReducer,
-    userRegisterReducer,
-    userUpdateReducer,
+    allUsersReducer,
+    forgotPasswordReducer,
+    profileReducer,
+    userDetailsReducer,
+    userReducer,
 } from "./reducers/userReducers";
+// import {
+//     adminLoginReducer,
+//     adminRegisterReducer,
+//     adminUpdateReducer,
+// } from "./reducers/adminReducers";
 import {
-    pinCreateReducer,
-    pinListReducer,
-    pinDeleteReducer,
-    pinUpdateReducer,
+    newPinReducer,
+    newReviewReducer,
+    pinDetailsReducer,
+    pinReducer,
+    pinReviewsReducer,
+    pinsReducer,
+    reviewReducer,
 } from "./reducers/pinsReducers";
 
 const reducer = combineReducers({
-    pinList: pinListReducer,
+    pins: pinsReducer,
+    pinDetails: pinDetailsReducer,
+    newReview: newReviewReducer,
+    newPin: newPinReducer,
+    pin: pinReducer,
+    pinReviews: pinReviewsReducer,
+    review: reviewReducer,
     noteList: noteListReducer,
-    userLogin: userLoginReducer,
-    userRegister: userRegisterReducer,
+    // adminLogin: adminLoginReducer,
+    // adminRegister: adminRegisterReducer,
+    user: userReducer,
     noteCreate: noteCreateReducer,
-    pinCreate: pinCreateReducer,
     noteDelete: noteDeleteReducer,
-    pinDelete: pinDeleteReducer,
     noteUpdate: noteUpdateReducer,
-    pinUpdate: pinUpdateReducer,
-    userUpdate: userUpdateReducer,
+    profile: profileReducer,
+    forgotPassword: forgotPasswordReducer,
+    userDetails: userDetailsReducer,
+    allUsers: allUsersReducer,
+    // adminUpdate: adminUpdateReducer,
 });
+// const adminInfoFromStorage = localStorage.getItem("adminInfo") ?
+//     JSON.parse(localStorage.getItem("adminInfo")) :
+//     null;
 
-const userInfoFromStorage = localStorage.getItem("userInfo") ?
-    JSON.parse(localStorage.getItem("userInfo")) :
-    null;
+// const userInfoFromStorage = localStorage.getItem("userInfo") ?
+//     JSON.parse(localStorage.getItem("userInfo")) :
+//     null;
 
-const initialState = {
-    userLogin: { userInfo: userInfoFromStorage },
-};
+// const initialState = {
+//     userLogin: { userInfo: userInfoFromStorage },
+//     adminLogin: { adminInfo: adminInfoFromStorage },
+// };
 
 const middleware = [thunk];
 
 const store = createStore(
     reducer,
-    initialState,
     composeWithDevTools(applyMiddleware(...middleware))
 );
 

@@ -1,0 +1,74 @@
+.mapboxgl-popup-content {
+    background: #7897ab;
+    width: 450px;
+    height: 450px;
+}
+
+label {
+    color: black;
+    width: max-content;
+    font-size: 20px;
+    border-bottom: 0.5px solid #d96098;
+    margin: 3px 0;
+}
+
+.desc {
+    font-size: 18px;
+    color: black;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    white-space: pre;
+}
+
+.username {
+    font-size: 18px;
+    color: black;
+}
+
+.date {
+    font-size: 18px;
+    color: black;
+}
+
+.viewmore {
+    display: inline;
+}
+
+@media screen and (max-width: 600px) {
+    .mapboxgl-popup-content {
+        background: #7897ab;
+        width: 300px;
+        height: 350px;
+    }
+    label {
+        color: #fffdde;
+        width: max-content;
+        font-size: 18px;
+        border-bottom: 0.5px solid #d96098;
+        margin: 3px 0;
+    }
+    .desc {
+        font-size: 15px;
+        color: black;
+        display: inline-block;
+        text-overflow: ellipsis;
+        width: 290px;
+        height: 60px;
+        overflow: hidden;
+        white-space: pre;
+    }
+    .username {
+        font-size: 15px;
+        color: black;
+    }
+    .date {
+        font-size: 15px;
+        color: black;
+    }
+    .viewmore {
+        display: inline;
+    }
+}
